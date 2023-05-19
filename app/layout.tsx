@@ -3,7 +3,6 @@ import '@/styles/globals.css'
 import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({ weight: '400', subsets: ['latin'] })
 
-
 export const metadata = {
   title: 'DSC',
   description: 'Design system with components',
@@ -22,11 +21,9 @@ export default function RootLayout({
         <div className='main'>
           <div className='gradient' />
         </div>
-        <main >
+        <main>
           <Navbar />
-          <div className='app'>
-            {children}
-          </div>
+          <div className='app'>{children}</div>
         </main>
       </body>
     </html>

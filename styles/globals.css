@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply accent-primary
+  @apply accent-primary;
 }
 .main {
   width: 100vw;
@@ -18,7 +18,7 @@
 .main:before {
   background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
   position: absolute;
-  content: "";
+  content: '';
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -26,8 +26,8 @@
 }
 
 .main:after {
-  content: "";
-  background-image: url("/assets/images/grid.svg");
+  content: '';
+  background-image: url('/assets/images/grid.svg');
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -54,7 +54,7 @@
     radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
     radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   filter: blur(100px) saturate(150%);
@@ -63,12 +63,12 @@
 }
 
 main {
-  @apply relative z-10
+  @apply relative z-10;
 }
 .app {
-  @apply relative z-10 max-w-7xl mx-auto sm:px-16 px-6 
+  @apply relative z-10 max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .component {
-  @apply flex flex-row flex-wrap gap-4 my-8 items-center
+  @apply flex flex-row flex-wrap gap-4 my-8 items-center;
 }
