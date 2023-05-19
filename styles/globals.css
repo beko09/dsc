@@ -73,11 +73,10 @@ main {
   @apply flex flex-row flex-wrap items-center gap-4 my-8;
 }
 
-
 textarea,
 select,
 select[multiple],
 [type='checkbox'],
 [type='radio'] {
-@apply focus:border-primary placeholder:text-slate-600 focus:!ring-primary 
+  @apply focus:border-primary placeholder:text-slate-600 focus:!ring-primary;
 }
