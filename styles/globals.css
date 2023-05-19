@@ -27,7 +27,7 @@
 
 .main:after {
   content: '';
-  background-image: url('/assets/images/grid.svg');
+  background-image: url('../public/assets/images/grid.svg');
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -66,9 +66,18 @@ main {
   @apply relative z-10;
 }
 .app {
-  @apply relative z-10 max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 px-6 mx-auto max-w-7xl sm:px-16;
 }
 
 .component {
-  @apply flex flex-row flex-wrap gap-4 my-8 items-center;
+  @apply flex flex-row flex-wrap items-center gap-4 my-8;
+}
+
+
+textarea,
+select,
+select[multiple],
+[type='checkbox'],
+[type='radio'] {
+@apply focus:border-primary placeholder:text-slate-600 focus:!ring-primary 
 }

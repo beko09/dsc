@@ -12,23 +12,15 @@ export default function Page() {
         <Button intent='danger'>danger</Button>
       </div>
       <div className='component'>
-        <Button intent='outlinePrimary'> decoration-4 outline primary</Button>
+        <Button intent='outlinePrimary'> outline primary</Button>
         <Button intent='outlineSecondary'>outlineSecondary</Button>
         <Button intent='outlineDanger'>outlineDanger</Button>
       </div>
       <div className='component'>
-        <Button intent='link' href='/'>
-          link
-        </Button>
-        <Button intent='primary' href='/'>
-          link primary
-        </Button>
-        <Button intent='secondary' href='/'>
-          link secondary
-        </Button>
-        <Button intent='danger' href='/'>
-          link danger
-        </Button>
+        <Button intent='primary' href='/'>  link primary </Button>
+        <Button intent='secondary' href='/'> link secondary </Button>
+        <Button intent='danger' href='/'> link danger </Button>
+        <Button intent='link' href='/'> link </Button>
       </div>
     </>
   )

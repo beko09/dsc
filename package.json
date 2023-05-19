@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build & build-storybook ",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css}\"",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006 -s ./public",
+    "build-storybook": "storybook build -s public",
     "test": "jest --watch",
     "prepare": "husky install"
   },
@@ -37,6 +37,7 @@
     "@storybook/nextjs": "^7.0.11",
     "@storybook/react": "^7.0.11",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@tailwindcss/forms": "^0.5.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "eslint-config-prettier": "^8.8.0",

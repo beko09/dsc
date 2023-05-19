@@ -141,7 +141,29 @@ add pre-push husky and add script `npm run test`
 ```bash
 npx husky add .husky/pre-push "npm run test"
 ```
+## tailwindcss form 
 
+lib to style all input form
+
+```bash
+npm install -D @tailwindcss/forms
+```
+
+(For more detail)[https://github.com/tailwindlabs/tailwindcss-forms]
+
+## Integrate Tailwind CSS and Storybook
+
+to Integrate Tailwind CSS and Storybook
+add style file in `preview.ts` in folder `.storybook`
+```bash
+import '../styles/globals.css'
+```
+and edit tailwindcss.config.ts to add path stories to content
+```bash
+'./stories/**/*.{js,ts,jsx,tsx,mdx}',
+```
+
+(For more detail)[https://storybook.js.org/recipes/tailwindcss]
 
 Run the development server:
 
