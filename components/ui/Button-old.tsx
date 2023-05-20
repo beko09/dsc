@@ -14,13 +14,11 @@ const buttonStyles = cva(
           'bg-secondary text-gray-900  hover:text-gray-900 hover:bg-white hover:border-gray-900',
         danger:
           'bg-danger text-white hover:bg-white hover:text-danger hover:border-re-500',
-      },
-      outline: {
-        primary:
+        outlinePrimary:
           'text-primary bg-white  !border-primary hover:bg-primary hover:text-white',
-        secondary:
+        outlineSecondary:
           ' text-black !border-gray-900  bg-white hover:bg-secondary hover:text-gray-900',
-        danger:
+        outlineDanger:
           ' text-danger bg-white !border-danger hover:bg-danger hover:text-white',
       },
     },
@@ -31,8 +29,8 @@ const buttonStyles = cva(
 )
 export interface Props
   extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonStyles> {}
+  VariantProps<typeof buttonStyles> {}
 
-export function Button({ intent, outline, ...props }: Props) {
-  return <button className={buttonStyles({ intent, outline })} {...props} />
+export function Button({ intent, ...props }: Props) {
+  return <button className={buttonStyles({ intent })} {...props} />
 }
