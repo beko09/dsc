@@ -3,11 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Button, Props as ButtonProps } from '../../../components/ui/Button'
 
 const meta: Meta<typeof Button> = {
-  /* 👇 The title prop is optional.
-   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
-   * to learn how to generate automatic titles
-   */
-  title: 'component/ui/Button',
+  title: 'components/ui/Button',
   component: Button,
 }
 

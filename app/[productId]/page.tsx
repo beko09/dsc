@@ -29,8 +29,9 @@ export default async function Page({
           <span className='block text-gray-600 capitalize'>
             count :{' '}
             <span
-              className={`${product.rating.count <= 100 ? 'text-danger' : 'text-primary'
-                }`}>
+              className={`${
+                product.rating.count <= 100 ? 'text-danger' : 'text-primary'
+              }`}>
               {product.rating.count}
             </span>
           </span>
@@ -46,9 +47,11 @@ export default async function Page({
           {product.title}
         </h2>
 
-
         <p className='text-lg text-slate-500 '>{product.description}</p>
-        <Button intent='primary' className='capitalize my-3 rounded-full'> add to cart</Button>
+        <Button intent='primary' className='capitalize my-3 rounded-full'>
+          {' '}
+          add to cart
+        </Button>
       </div>
     </div>
   )

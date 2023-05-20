@@ -37,8 +37,9 @@ export default function Card({ product }: Props) {
         <span className='block text-gray-600 capitalize'>
           count :{' '}
           <span
-            className={`${product.rating.count <= 100 ? 'text-danger' : 'text-primary'
-              }`}>
+            className={`${
+              product.rating.count <= 100 ? 'text-danger' : 'text-primary'
+            }`}>
             {product.rating.count}
           </span>
         </span>
