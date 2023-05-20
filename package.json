@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run build-storybook ",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css}\"",
     "storybook": "storybook dev -p 6006 -s ./public",
-    "build-storybook": "storybook build -s public",
+    "build-storybook": "storybook build -s ./public",
+    "serve-storybook": "serve docs",
     "test": "jest --watch",
     "prepare": "husky install"
   },
