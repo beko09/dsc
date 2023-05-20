@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Product } from '@/app/page'
 import { getData } from '@/utils/fetchData'
 import { Badged } from '@/components/ui/Badged'
+import { Button } from '@/components/ui/Button'
 
 export default async function Page({
   params,
@@ -22,10 +23,10 @@ export default async function Page({
       <div>
         <Badged intent='outlinePrimary'>{product.category}</Badged>
         <div className='flex flex-row justify-between'>
-          <span className='block text-gray-600'>
+          <span className='block text-gray-600 capitalize'>
             rating : <span className=' text-danger'>{product.rating.rate}</span>
           </span>
-          <span className='block text-gray-600'>
+          <span className='block text-gray-600 capitalize'>
             count :{' '}
             <span
               className={`${product.rating.count <= 100 ? 'text-danger' : 'text-primary'
@@ -34,19 +35,20 @@ export default async function Page({
             </span>
           </span>
         </div>
-
-        <h2 className='text-2xl py-3 text-gray-900 capitalize '>
-          {product.title}
-        </h2>
         <h1>
           price:{' '}
-          <span className='text-primary text-3xl'>
+          <span className='text-primary text-3xl capitalize'>
             {product.price}
             <span className='text-green-600 text-xl'>﹩</span>
           </span>
         </h1>
+        <h2 className='text-2xl py-3 text-gray-900 capitalize '>
+          {product.title}
+        </h2>
 
-        <p className='text-xl text-slate-600 '>{product.description}</p>
+
+        <p className='text-lg text-slate-500 '>{product.description}</p>
+        <Button intent='primary' className='capitalize my-3 rounded-full'> add to cart</Button>
       </div>
     </div>
   )

@@ -48,7 +48,6 @@ export default function Page() {
         <Badged intent='outlineSecondary'>outlineSecondary</Badged>
         <Badged intent='outlineDanger'>outlineDanger</Badged>
       </div>
-
     </div>
   )
 }

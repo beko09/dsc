@@ -23,7 +23,7 @@ export default function Card({ product }: Props) {
       <h2 className='text-xl text-gray-900 capitalize line-clamp-1'>
         {product.title}
       </h2>
-      <h1>
+      <h1 className='capitalize'>
         price:{' '}
         <span className='text-primary text-3xl'>
           {product.price}
@@ -31,15 +31,14 @@ export default function Card({ product }: Props) {
         </span>
       </h1>
       <div className='flex flex-row justify-between'>
-        <span className='block text-gray-600'>
+        <span className='block text-gray-600 capitalize'>
           rating : <span className=' text-danger'>{product.rating.rate}</span>
         </span>
-        <span className='block text-gray-600'>
+        <span className='block text-gray-600 capitalize'>
           count :{' '}
           <span
-            className={`${
-              product.rating.count <= 100 ? 'text-danger' : 'text-primary'
-            }`}>
+            className={`${product.rating.count <= 100 ? 'text-danger' : 'text-primary'
+              }`}>
             {product.rating.count}
           </span>
         </span>
