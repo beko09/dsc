@@ -1,12 +1,12 @@
-
-export async function getData( id?:number) {
-  let url;
+export async function getData(id?: number) {
+  let url
   if (id) {
     url = `https://fakestoreapi.com/products/${id}`
   } else {
     url = `https://fakestoreapi.com/products`
   }
-  const res = await fetch(url,
+  const res = await fetch(
+    url
     // server side rendering => SSR
     //  {
     // cache:'no-store'
@@ -22,7 +22,6 @@ export async function getData( id?:number) {
 
     // if no thing nextjs by default use  SSG
     // Static side generation
-  
   )
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.

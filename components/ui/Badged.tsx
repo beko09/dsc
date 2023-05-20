@@ -8,18 +8,12 @@ const badgedStyles = cva(
   {
     variants: {
       intent: {
-        primary:
-          'bg-primary text-white  ',
-        secondary:
-          'bg-secondary text-gray-900 ',
-        danger:
-          'bg-danger text-white',
-        outlinePrimary:
-          'text-primary bg-white  !border-primary border',
-        outlineSecondary:
-          ' text-black !border-gray-900  bg-white border',
-        outlineDanger:
-          ' text-danger bg-white !border-danger border',
+        primary: 'bg-primary text-white  ',
+        secondary: 'bg-secondary text-gray-900 ',
+        danger: 'bg-danger text-white',
+        outlinePrimary: 'text-primary bg-white  !border-primary border',
+        outlineSecondary: ' text-black !border-gray-900  bg-white border',
+        outlineDanger: ' text-danger bg-white !border-danger border',
       },
     },
     defaultVariants: {
@@ -33,5 +27,4 @@ export interface Props extends VariantProps<typeof badgedStyles> {
 
 export function Badged({ intent, ...props }: Props) {
   return <span className={badgedStyles({ intent })} {...props} />
-
 }

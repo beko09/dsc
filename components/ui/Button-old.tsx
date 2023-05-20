@@ -29,7 +29,7 @@ const buttonStyles = cva(
 )
 export interface Props
   extends ButtonHTMLAttributes<HTMLButtonElement>,
-  VariantProps<typeof buttonStyles> {}
+    VariantProps<typeof buttonStyles> {}
 
 export function Button({ intent, ...props }: Props) {
   return <button className={buttonStyles({ intent })} {...props} />
