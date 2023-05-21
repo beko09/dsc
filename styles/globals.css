@@ -80,3 +80,7 @@ select[multiple],
 [type='radio'] {
   @apply focus:border-primary placeholder:text-slate-600 focus:!ring-primary;
 }
+
+.nosifer-normal-400 {
+    font-family: Nosifer !important;
+  }

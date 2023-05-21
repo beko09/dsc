@@ -5,6 +5,7 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
   ],
   framework: {
     name: '@storybook/nextjs',
@@ -12,7 +13,7 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: 'tag',
-    defaultName: 'DSC Documentation',
+    defaultName: 'Documentation',
   },
 }
 export default config
