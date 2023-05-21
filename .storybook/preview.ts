@@ -33,16 +33,14 @@ const preview: Preview = {
     //   page: DocumentationTemplate,
     // },
     previewTabs: {
-    'storybook/docs/panel': {
-      hidden: true
-    },
-    'storybook/docs/toolbar': {
-      hidden: true
+      'storybook/docs/panel': {
+        hidden: true,
+      },
+      'storybook/docs/toolbar': {
+        hidden: true,
       },
     },
-  
   },
-  
 }
 
 export default preview

@@ -13,7 +13,7 @@ export default function Navbar() {
         <Button href='/button' intent='link' className='text-lg text-slate-700'>
           Ui
         </Button>
-        <Button href='/' intent='link' className='text-lg text-slate-700'>
+        <Button href='/docs' intent='link' className='text-lg text-slate-700'>
           docs
         </Button>
         <Button href='/button' intent='link' className='text-lg text-slate-700'>

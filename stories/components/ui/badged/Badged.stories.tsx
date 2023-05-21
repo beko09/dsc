@@ -11,10 +11,9 @@ const meta: Meta<typeof Badged> = {
     // variable component accept and add option and control
     intent: {
       options: ['primary', 'secondary', 'danger'],
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
-
-  }
+  },
 }
 export default meta
 
@@ -38,7 +37,7 @@ export const secondary: Story = {
 // create story with function
 export const outlineSecondary: Story = {
   render: () => <Badged intent='outlineSecondary'>😄👍😍💯</Badged>,
-};
+}
 
 export const outlineprimary: Story = {
   args: {

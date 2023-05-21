@@ -1,6 +1,6 @@
 // .storybook/manager.js
 
-import { addons } from '@storybook/manager-api';
+import { addons } from '@storybook/manager-api'
 import theme from './theme'
 addons.setConfig({
   isFullscreen: true,
@@ -23,4 +23,4 @@ addons.setConfig({
     copy: { hidden: false },
     fullscreen: { hidden: false },
   },
-});
+})
